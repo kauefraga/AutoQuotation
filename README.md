@@ -23,7 +23,7 @@
 
 <h4 align='center'>Pega as cotações do dólar, euro, libra esterlina e do ouro</h4>
 
-## ⬇️ Como instalar (Precisa de: git, python)
+## ⬇️ Como instalar (Precisa do python)
 
 ```bash
 git clone https://github.com/kauefraga/AutoQuotation.git
