@@ -28,7 +28,8 @@
 ```bash
 git clone https://github.com/kauefraga/AutoQuotation.git
 cd AutoQuotation
-python aula[1,2,3,4]/main.py
+pip install -r ./requirements.txt
+python src/main.py
 ```
 
 ## 💻 Tecnologias
@@ -46,5 +47,5 @@ Olhe a [LICENÇA](https://github.com/kauefraga/AutoQuotation/blob/main/LICENSE) 
 
 <div align='center' display='flex'>
   <img alt='Feito com amor' src='https://forthebadge.com/images/badges/built-with-love.svg' />
-  <img alt='Boostado pelo café' src='http://forthebadge.com/images/badges/powered-by-coffee.svg' />
+  <img alt='Boostado pelo café' src='https://forthebadge.com/images/badges/powered-by-coffee.svg' />
 </div>
