@@ -9,18 +9,8 @@ browser = webdriver.Chrome('C:/chromedriver/chromedriver.exe', options=options)
 def closeBrowser():
   browser.close()
 
-def getDolarQuotation():
-  browser.get('https://www.google.com.br')
-
-  browser.find_element(
-    By.XPATH,
-    '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[2]/div[2]/input'
-  ).send_keys('Cotação dólar')
-
-  browser.find_element(
-    By.XPATH,
-    '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[2]/div[2]/input'
-  ).send_keys(Keys.ENTER)
+def getDolar():
+  browser.get('https://www.google.com.br/search?q=cotacao+dolar')
 
   dolarQuotation: float = browser.find_element(
     By.XPATH,
@@ -29,18 +19,8 @@ def getDolarQuotation():
 
   return dolarQuotation
 
-def getEuroQuotation():
-  browser.get('https://www.google.com.br')
-
-  browser.find_element(
-    By.XPATH,
-    '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[2]/div[2]/input'
-  ).send_keys('Cotação euro')
-
-  browser.find_element(
-    By.XPATH,
-    '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[2]/div[2]/input'
-  ).send_keys(Keys.ENTER)
+def getEuro():
+  browser.get('https://www.google.com/search?q=cotacao+euro')
 
   euroQuotation: float = browser.find_element(
     By.XPATH,
@@ -49,18 +29,8 @@ def getEuroQuotation():
 
   return euroQuotation
 
-def getPoundSterlingQuotation():
-  browser.get('https://www.google.com.br')
-
-  browser.find_element(
-    By.XPATH,
-    '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[2]/div[2]/input'
-  ).send_keys('Cotação libra')
-
-  browser.find_element(
-    By.XPATH,
-    '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[2]/div[2]/input'
-  ).send_keys(Keys.ENTER)
+def getPoundSterling():
+  browser.get('https://www.google.com/search?q=cotacao+libra')
 
   poundSterlingQuotation: float = browser.find_element(
     By.XPATH,
@@ -69,7 +39,7 @@ def getPoundSterlingQuotation():
 
   return poundSterlingQuotation
 
-def getGoldQuotation():
+def getGold():
   browser.get('https://dolarhoje.com/ouro-hoje/')
 
   goldQuotation: str = browser.find_element(

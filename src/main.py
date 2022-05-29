@@ -1,8 +1,16 @@
-from lib.newQuotationTable import newQuotationTable
+from lib.getQuotation import getDolar, getEuro, getPoundSterling, getGold, closeBrowser
+from lib.newTable import newTable
 
 def main():
-  table = newQuotationTable()
-  print(table)
+  dolar = getDolar()
+  euro = getEuro()
+  poundSterling = getPoundSterling()
+  gold = getGold()
+
+  quotationTable = newTable({ dolar, euro, poundSterling, gold })
+
+  print(quotationTable)
+
   exit()
 
 if __name__ == '__main__':
